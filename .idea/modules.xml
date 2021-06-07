@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/azure-examples.iml" filepath="$PROJECT_DIR$/azure-examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/helloworld-jar/helloworld-jar.iml" filepath="$PROJECT_DIR$/helloworld-jar/helloworld-jar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/helloworld-springboot-jar/helloworld-springboot-jar.iml" filepath="$PROJECT_DIR$/helloworld-springboot-jar/helloworld-springboot-jar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/helloworld-war/helloworld-war.iml" filepath="$PROJECT_DIR$/helloworld-war/helloworld-war.iml" />
+      <module fileurl="file://$PROJECT_DIR$/resource-connector-spring-boot/resource-connector-spring-boot.iml" filepath="$PROJECT_DIR$/resource-connector-spring-boot/resource-connector-spring-boot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/resource-connector-vanilla-java/resource-connector-vanilla-java.iml" filepath="$PROJECT_DIR$/resource-connector-vanilla-java/resource-connector-vanilla-java.iml" />
+    </modules>
+  </component>
+</project>
