@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/azure-examples.iml" filepath="$PROJECT_DIR$/azure-examples.iml" />
-      <module fileurl="file://$PROJECT_DIR$/example-connector-env-java/example-connector-env-java.iml" filepath="$PROJECT_DIR$/example-connector-env-java/example-connector-env-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example-connector-env-java/example-connector-env-variables.iml" filepath="$PROJECT_DIR$/example-connector-env-java/example-connector-env-variables.iml" />
       <module fileurl="file://$PROJECT_DIR$/example-connector-mysql-java/example-connector-mysql-java.iml" filepath="$PROJECT_DIR$/example-connector-mysql-java/example-connector-mysql-java.iml" />
       <module fileurl="file://$PROJECT_DIR$/example-connector-sqlserver-spring/example-connector-sqlserver-spring.iml" filepath="$PROJECT_DIR$/example-connector-sqlserver-spring/example-connector-sqlserver-spring.iml" />
       <module fileurl="file://$PROJECT_DIR$/example-connector-storage-spring/example-connector-storage-spring.iml" filepath="$PROJECT_DIR$/example-connector-storage-spring/example-connector-storage-spring.iml" />

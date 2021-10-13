@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>example-connector-env-java</module>
+        <module>example-connector-env-variables</module>
         <module>example-connector-mysql-java</module>
         <module>example-connector-sqlserver-spring</module>
         <module>example-connector-storage-spring</module>
