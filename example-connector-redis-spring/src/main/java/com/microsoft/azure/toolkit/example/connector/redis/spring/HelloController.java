@@ -21,12 +21,10 @@ public class HelloController {
     }
 
     @RequestMapping("/")
-    // Define the Hello World controller.
     public String hello() {
 
         ValueOperations<String, String> ops = this.template.opsForValue();
 
-        // Add a Hello World string to your cache.
         String key = "greeting";
         if (Boolean.FALSE.equals(this.template.hasKey(key))) {
             ops.set(key, "Hello World!");
