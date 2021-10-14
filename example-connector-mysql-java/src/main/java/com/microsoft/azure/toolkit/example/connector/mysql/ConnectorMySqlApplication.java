@@ -11,7 +11,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class ResourceConnectorVanillaJavaMain {
+public class ConnectorMySqlApplication {
 
     public static void main(String[] args) throws SQLException {
         final String prefix = "AZURE_MYSQL_";

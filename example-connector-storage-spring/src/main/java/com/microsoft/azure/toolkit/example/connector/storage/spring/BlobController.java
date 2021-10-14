@@ -11,20 +11,19 @@ import java.io.OutputStream;
 import java.nio.charset.Charset;
 
 @RestController
-@RequestMapping("blob")
 public class BlobController {
 
     @Value("azure-blob://testcontainer/test.txt")
     private Resource blobFile;
 
-    @GetMapping("/readBlobFile")
+    @GetMapping("/")
     public String readBlobFile() throws IOException {
         return StreamUtils.copyToString(
                 this.blobFile.getInputStream(),
                 Charset.defaultCharset());
     }
 
-    @PostMapping("/writeBlobFile")
+    @PostMapping("/")
     public String writeBlobFile(@RequestBody String data) throws IOException {
         try (OutputStream os = ((WritableResource) this.blobFile).getOutputStream()) {
             os.write(data.getBytes());

@@ -2,7 +2,7 @@ package com.microsoft.azure.toolkit.example.connector.java.env;
 
 import java.util.Map;
 
-public class MainApp {
+public class ConnectorEnvApplication {
     public static void main(String... args) {
         Map<String, String> env = System.getenv();
         env.entrySet().stream()

@@ -15,5 +15,6 @@
         <module>example-connector-storage-spring</module>
         <module>example-webapp-jsp-helloworld</module>
         <module>example-webapp-spring-helloworld</module>
+        <module>example-connector-redis-spring</module>
     </modules>
 </project>
