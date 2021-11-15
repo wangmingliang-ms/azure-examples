@@ -19,10 +19,13 @@
     <modules>
         <module>example-connector-env-variables</module>
         <module>example-connector-mysql-java</module>
+        <module>example-connector-postgre-java</module>
         <module>example-connector-sqlserver-spring</module>
+        <module>example-connector-postgre-spring</module>
         <module>example-connector-storage-spring</module>
         <module>example-webapp-jsp-helloworld</module>
         <module>example-webapp-spring-helloworld</module>
         <module>example-connector-redis-spring</module>
+
     </modules>
 </project>
