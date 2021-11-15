@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="connections">
-    <connection type="Azure.PostgreSQL:Jetbrains.IJModule" envPrefix="AZURE_POSTGRESQL">
-      <resource type="Azure.PostgreSQL">477dad03077bc7e5822f48f19f0b19af</resource>
-      <consumer type="Jetbrains.IJModule">example-connector-postgre-spring</consumer>
-    </connection>
-  </component>
-</project>
