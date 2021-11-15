@@ -21,20 +21,12 @@ public class PetController {
     private final PetRepository repo;
     @Value("${spring.datasource.url}")
     private String springDatasourceUrl;
-//    @Value("${spring.second-datasource.url}")
-//    private String secondDatasourceUrl;
 
     @GetMapping("/datasource")
     @ResponseBody
     public String url() {
         return springDatasourceUrl;
     }
-//
-//    @GetMapping("/second_datasource")
-//    @ResponseBody
-//    public String secondUrl() {
-//        return secondDatasourceUrl;
-//    }
 
     @PostMapping(path = "/pets")
     @ResponseBody
