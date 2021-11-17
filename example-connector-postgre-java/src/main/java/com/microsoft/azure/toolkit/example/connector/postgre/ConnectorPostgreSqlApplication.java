@@ -14,7 +14,7 @@ import java.sql.Statement;
 public class ConnectorPostgreSqlApplication {
 
     public static void main(String[] args) throws SQLException {
-        final String prefix = "AZURE_POSTGRE_";
+        final String prefix = "AZURE_POSTGRESQL_";
         final String url = System.getenv(prefix + "URL");
         final String username = System.getenv(prefix + "USERNAME");
         final String password = System.getenv(prefix + "PASSWORD");
