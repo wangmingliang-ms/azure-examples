@@ -26,6 +26,8 @@
         <module>example-webapp-jsp-helloworld</module>
         <module>example-webapp-spring-helloworld</module>
         <module>example-connector-redis-spring</module>
-
+        <module>example-connector-cosmos-mongo-spring</module>
+        <module>example-connector-cosmos-cassandra-spring</module>
+        <module>example-connector-cosmos-sql-spring</module>
     </modules>
 </project>
