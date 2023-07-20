@@ -25,7 +25,6 @@ hs_err_pid*
 
 # IDE
 .idea/
-*.iml
 .classpath
 .project
 .settings/
@@ -43,5 +42,3 @@ hs_err_pid*
 
 jacoco.exec
 bin/
-
-*.iml

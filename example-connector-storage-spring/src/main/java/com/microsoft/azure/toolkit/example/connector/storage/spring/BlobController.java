@@ -13,7 +13,7 @@ import java.nio.charset.Charset;
 @RestController
 public class BlobController {
 
-    @Value("azure-blob://testcontainer/test.txt")
+    @Value("azure-blob://${azure.storage.blob.file}")
     private Resource blobFile;
 
     @GetMapping("/")
