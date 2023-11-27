@@ -3,31 +3,66 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>org.microsoft.azure.toolkit.example</groupId>
     <artifactId>azure-examples</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
-    <properties>
-        <java.version>1.8</java.version>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
-
     <modules>
+        <module>example-connector-cosmos-cassandra-spring</module>
+        <module>example-connector-cosmos-mongo-spring</module>
+        <module>example-connector-cosmos-sql-spring</module>
         <module>example-connector-env-variables</module>
+        <module>example-connector-keyvault-spring</module>
         <module>example-connector-mysql-java</module>
         <module>example-connector-postgre-java</module>
-        <module>example-connector-sqlserver-spring</module>
         <module>example-connector-postgre-spring</module>
+        <module>example-connector-redis-spring</module>
+        <module>example-connector-sqlserver-spring</module>
         <module>example-connector-storage-spring</module>
         <module>example-webapp-jsp-helloworld</module>
         <module>example-webapp-spring-helloworld</module>
-        <module>example-connector-redis-spring</module>
-        <module>example-connector-cosmos-mongo-spring</module>
-        <module>example-connector-cosmos-cassandra-spring</module>
-        <module>example-connector-cosmos-sql-spring</module>
     </modules>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <version.guava>31.1-jre</version.guava>
+        <version.spring.boot>3.2.0</version.spring.boot>
+        <version.spring.cloud>2022.0.4</version.spring.cloud>
+        <version.spring.cloud.azure>5.7.0</version.spring.cloud.azure>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${version.spring.boot}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${version.spring.cloud}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.azure.spring</groupId>
+                <artifactId>spring-cloud-azure-dependencies</artifactId>
+                <version>${version.spring.cloud.azure}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.20</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
 </project>
