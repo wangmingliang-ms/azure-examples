@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    azure:
+      keyvault:
+        secret:
+          property-sources[0]:
+            endpoint: ${KEY_VAULT_ENDPOINT}
+          endpoint: ${KEY_VAULT_ENDPOINT}
+          property-source-enabled: true
+  datasource:
+    password: ${wangmi-db-password}
