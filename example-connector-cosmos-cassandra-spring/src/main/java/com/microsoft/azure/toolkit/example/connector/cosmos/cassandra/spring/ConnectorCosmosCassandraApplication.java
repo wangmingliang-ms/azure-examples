@@ -8,8 +8,10 @@ package com.microsoft.azure.toolkit.example.connector.cosmos.cassandra.spring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 @SpringBootApplication
+@EntityScan(basePackageClasses = Pet.class)
 public class ConnectorCosmosCassandraApplication {
 
     public static void main(String[] args) {

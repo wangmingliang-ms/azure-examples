@@ -6,7 +6,6 @@
 
 package com.microsoft.azure.toolkit.example.connector.cosmos.cassandra.spring;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -21,8 +20,11 @@ public class PetController {
     /**
      * using spring data source defined in application.properties,autowire petrepository as an entity.
      */
-    @Autowired
-    private PetRepository petRepository;
+    private final PetRepository petRepository;
+
+    public PetController(PetRepository petRepository) {
+        this.petRepository = petRepository;
+    }
 
     /**
      * createPet used the spring framework to create the sql statement using the method save(...).

@@ -6,11 +6,17 @@
 
 package com.microsoft.azure.toolkit.example.connector.cosmos.cassandra.spring;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.data.cassandra.core.mapping.PrimaryKey;
 import org.springframework.data.cassandra.core.mapping.Table;
 
 import java.util.UUID;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Table
 public class Pet {
     @PrimaryKey
