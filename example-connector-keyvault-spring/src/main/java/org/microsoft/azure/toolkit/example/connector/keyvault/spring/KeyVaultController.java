@@ -9,7 +9,7 @@ import java.io.IOException;
 @RestController
 public class KeyVaultController {
 
-    @Value("${spring.datasource.password}")
+    @Value("${dbpassword}")
     private String password;
 
     @GetMapping("/password")

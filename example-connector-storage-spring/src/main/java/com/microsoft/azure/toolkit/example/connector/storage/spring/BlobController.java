@@ -16,7 +16,7 @@ import java.nio.charset.Charset;
 @RestController
 public class BlobController {
 
-    @Value("azure-blob://azure-webjobs-hosts/ids/usage/app-azure-function-examples-3-23")
+    @Value("azure-blob://blobcontainer1/blob2")
     private Resource blobFile;
 
     @GetMapping("/")
