@@ -16,7 +16,7 @@ import java.nio.charset.Charset;
 @RestController
 public class BlobController {
 
-    @Value("azure-blob://blobcontainer1/blob2")
+    @Value("azure-blob://blobcontainer2/folder1/folder11/prompts.problems.md")
     private Resource blobFile;
 
     @GetMapping("/")
